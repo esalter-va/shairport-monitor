@@ -2,9 +2,9 @@
   "name": "shairport-monitor",
   "version": "1.0.0",
   "description": "Metadata monitor for shairport-sync",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "test": "echo \"No tests here!\"",
     "dev": "webpack-dev-server --content-base dist/",
     "build": "webpack --progress",
