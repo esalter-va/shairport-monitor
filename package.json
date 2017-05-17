@@ -1,0 +1,23 @@
+{
+  "name": "shairport-monitor",
+  "version": "1.0.0",
+  "description": "Metadata monitor for shairport-sync",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esalter-va/shairport-monitor.git"
+  },
+  "author": "Evan Salter <evanearlsalter@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esalter-va/shairport-monitor/issues"
+  },
+  "homepage": "https://github.com/esalter-va/shairport-monitor#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
