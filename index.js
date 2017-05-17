@@ -1,9 +1,9 @@
 var express = require('express')
-var io = require('socket.io')(http)
 var path = require('path')
 
 var app = express()
 var http = require('http').createServer(app)
+var io = require('socket.io')(http)
 
 app.use('/dist', express.static('dist'))
 
