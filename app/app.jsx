@@ -2,8 +2,20 @@ import React from 'react'
 import io from 'socket.io-client'
 
 export default class App extends React.Component {
-    render() {
+    constructor() {
+        super()
+        this.state = {}
         var socket = io()
-        return <h1>Hello, world!</h1>
+        socket.on('metadata', msg => {
+            this.setState({metadata: msg})
+        })
+    }
+    render() {
+        return (
+            <div>
+                <h1>Hello, world!</h1>
+                <div>{ JSON.stringify(this.state.metadata) }</div>
+            </div>
+        )
     }
 }
